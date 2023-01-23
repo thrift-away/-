@@ -1,0 +1,330 @@
+/*Home*/
+html{
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans';
+}
+.banner{
+    margin-top: -50px;
+    width: 100%;
+    height: 800px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("images/slider.gif");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(rgba(223, 211, 211, 0.5),rgba(238, 148, 89, 0.5));
+    z-index: 99;
+}
+.logo{
+    padding-left: 50px;
+    width: 200px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.menu{
+    float: right;
+    margin-top: 3%;
+    padding-right: 100px;
+}
+.menu .active{
+    color: #e77878;
+    border-bottom: 3px solid #F7D1CE;
+}
+.menu ul li{
+    list-style: none;
+    display: inline;
+    margin: 0 20px;
+    position: relative;
+}
+.menu ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+.menu ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background: #F7D1CE;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+    color: #e77878;
+}
+.menu ul li:hover::after{
+    content:'';
+    height: 3px;
+    width: 100%;
+    background: #F7D1CE;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+    color: #e77878;
+}
+ .content{
+    width: 100%;
+    position: relative;
+    top: 40%;
+    left: 300px;
+    color: #F7D1CE;
+} 
+
+.content .home{
+    font-weight: 200;
+    font-size: 70px;
+    margin-top: 50px;
+}
+.content .sub{
+    width: 80%;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 200;
+    margin-left: -10%;
+}
+.content h1{
+    font-size: 60px;
+    margin-top: 150px;
+}
+.content h3{
+    font-size: 25px;
+    margin: 20px;
+    font-style: bold;
+}
+.buttons{
+    padding-left: 25%;
+}
+.content .button {
+    width: 150px;
+    padding: 15px;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 15px;
+    font-weight: bold;
+    border:  double #F7D1CE;
+    background: linear-gradient(rgba(231, 120, 120,0.25),rgba(231, 120, 120,0.25));
+    color: #e77878;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.5s;
+}
+.content .button:hover{
+    background: linear-gradient(rgba(231, 120, 120,0.5),rgba(231, 120, 120,0.5));
+    color: #F7D1CE;
+}
+.content-area{
+    align-items: center;
+    text-align: center;
+    float: right;
+    background: white;
+    width: 100%;
+}
+.content-area table a{
+    font-size: 25px;
+    color: #e77878;
+    text-decoration: none;
+}
+.content-area table td{
+    padding: 15px;
+}
+.content-area img{
+    opacity: 1;
+    transition: 0.5s;
+}
+.content-area img:hover{
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.category{
+    width: 250px;
+    height: 250px;
+   }
+.content-area h2{
+    font-size: 40px;
+    color: #e77878;
+    padding: 20px;
+    padding-top: 40px;
+    text-align: center;
+    padding-left: 30px;
+}
+
+.content-area .box{
+    padding-left: 20px;
+    margin-left: 20%;
+    text-align: center;
+    width: 60%;
+    height: 630px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 5%;
+}
+
+.testimonials{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("images/testimonials.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding-top: 20%;
+}
+.testimonials h2{
+    font-size: 40px;
+    color: #e77878;
+    padding: 20px;
+    text-align: center;
+    padding-left: 30px;
+    padding-top: 40%;
+}
+.testimonials table{
+    padding: 50px;
+    padding-left: 80px;
+    border-spacing: 50px;
+}
+.test{
+    background-color: white;
+    padding: 25px;
+    width: 300px;
+    height: 100px;
+    justify-content: space-between;
+    /* margin-bottom: 30px ; */
+}
+.test-img{
+    margin-top: -100px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 30px; 
+}
+.popular{
+    align-items: center;
+    text-align: center;
+    float: right;
+    background: white;
+    width: 100%;
+}
+.popular table a{
+    font-size: 25px;
+    color: #e77878;
+    text-decoration: none;
+}
+.popular table td{
+    padding: 15px;
+}
+.popular img{
+    opacity: 1;
+    transition: 0.5s;
+}
+.popular img:hover{
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.pop{
+    width: 250px;
+    height: 250px;
+   }
+.popular h2{
+    font-size: 40px;
+    color: #e77878;
+    padding: 20px;
+    padding-top: 40px;
+    text-align: center;
+    padding-left: 30px;
+}
+
+.popular .box{
+    padding-left: 20px;
+    margin-left: 8%;
+    text-align: center;
+    width: 80%;
+    height: 330px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 5%;
+}
+
+.order{
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("images/slider.gif");
+    /* background-attachment: fixed; */
+    background-size:contain;
+    background-repeat: round;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 60vh;
+    padding-top: 20%;
+}
+
+.order h2{
+    color: #3a3a3a;
+    font-size: 35px;
+    float: left;
+    padding-top: 100px;
+    padding-left: 25%;
+}
+
+.order .buttons{
+    padding-top: 19%;
+    padding-left: 25%;
+}
+.order .button {
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 15px;
+    font-weight: bold;
+    border:  double white;
+    background: linear-gradient(rgba(231, 120, 120, 0.75),rgba(231, 120, 120,0.75));
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.order .button:hover{
+    background: white;
+    border: double #e77878;
+    color: #e77878;
+    transition: 0.5s;
+}
+
+.footer{
+    background-color: #3a3a3a;
+    height: 250px;
+    color: white;
+}
+
+.footer ul li{
+    list-style: none;
+    /* position: relative; */
+}
+.footer ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+.elements h3{
+    color: #e77878;
+    padding-bottom: 20px;
+}
+.elements table a{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+.elements table td{
+    justify-content: space-evenly   ;
+    padding: 15px;
+    width: 18%;
+}
+
+
